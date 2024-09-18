@@ -1,0 +1,5 @@
+# Ensure Python files use LF
+*.py text eol=lf
+
+# Ensure XML files use CRLF
+*.xml text eol=crlf
