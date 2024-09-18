@@ -28,7 +28,7 @@ else:
     from opendr.contexts.ctx_mesa import OsContext
 
 from chumpy import *
-from opendr.contexts._constants import *
+#from opendr.contexts._constants import *
 from chumpy.utils import row, col
 
 pixel_center_offset = 0.5

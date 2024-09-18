@@ -1,10 +1,10 @@
 from __future__ import unicode_literals, print_function
 import transforms3d as t3d
 import pickle
-import renderer
+#import renderer
 import chumpy as ch
 import numpy as np
-from opendr.lighting import LambertianPointLight
+#from opendr.lighting import LambertianPointLight
 try:
     from utils.mano_core.mano_loader import load_model
     from utils.mano_core.lbs import global_rigid_transformation
@@ -103,7 +103,7 @@ class HandModel(object):
         # apply changes
         self.global_trans[:] = global_t
 
-    def render(self, cam_intrinsics, dist=None, M=None, img_shape=None, render_mask=False):
+    '''def render(self, cam_intrinsics, dist=None, M=None, img_shape=None, render_mask=False):
         from opendr.camera import ProjectPoints
         from renderer import ColoredRenderer
 
@@ -180,4 +180,4 @@ class HandModel(object):
         # render
         img = (np.array(rn.r) * 255).astype(np.uint8)
         return img
-
+'''
