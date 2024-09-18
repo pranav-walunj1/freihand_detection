@@ -1,0 +1,17 @@
+# Ignore the virtual environment directory
+venv/
+
+# Ignore PyCharm project files
+.idea/
+
+# Ignore Python bytecode
+__pycache__/
+
+# Ignore the Dataset folder
+Dataset/
+
+Lib/
+Scripts/
+FreiHAND_pub_v2/
+# Track everything else
+!*
