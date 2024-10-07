@@ -11,7 +11,7 @@ try:
     from utils.mano_utils import get_keypoints_from_mesh_ch
 except ImportError as e:
     raise ImportError('%s \nDid you set up the repository for advanced use?' % e)
-
+    print('###########',e)
 
 renderer = None
 def pose_hand(mano, K, use_mean_pose=True):
